@@ -13,7 +13,7 @@ macos-bootstrap-master/bootstrap.sh
 #### Cleanup
 
 ```bash
-rm -r macos-bootstrap*
+rm -r macos-bootstrap-master macos-bootstrap-master.tar.gz
 ```
 
 #### Next steps
