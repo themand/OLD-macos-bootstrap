@@ -5,7 +5,7 @@ set -euo pipefail
 
 H1 "Google Chrome"
 
-H2 "Downloading..."
+H2 "Downloading from https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg ..."
 DIR="$TMPDIR$(uuidgen)"
 mkdir -p $DIR/mount
 curl https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg > $DIR/googlechrome.dmg
