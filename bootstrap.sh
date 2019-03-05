@@ -14,6 +14,7 @@ fi
 
 ${0%/*}/scripts/macos.sh || err
 ${0%/*}/scripts/dotfiles.sh || err
+${0%/*}/scripts/hosts.sh || err
 ${0%/*}/scripts/brew.sh || err
 ${0%/*}/scripts/chrome.sh || err
 ${0%/*}/scripts/webstorm.sh || err
