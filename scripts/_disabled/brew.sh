@@ -26,12 +26,12 @@ H3 "at prefix $HOMEBREW_PREFIX"
 [ -d "$HOMEBREW_PREFIX" ] || sudo mkdir -p "$HOMEBREW_PREFIX"
 if [ "$HOMEBREW_PREFIX" = "/usr/local" ]
 then
-  sudo chown "root:wheel" "$HOMEBREW_PREFIX" 2>/dev/null || true
+    sudo chown "root:wheel" "$HOMEBREW_PREFIX" 2>/dev/null || true
 fi
 (
-  cd "$HOMEBREW_PREFIX"
-  sudo mkdir -p Cellar Frameworks bin etc include lib opt sbin share var
-  sudo chown -R "$USER:admin" Cellar Frameworks bin etc include lib opt sbin share var
+    cd "$HOMEBREW_PREFIX"
+    sudo mkdir -p Cellar Frameworks bin etc include lib opt sbin share var
+    sudo chown -R "$USER:admin" Cellar Frameworks bin etc include lib opt sbin share var
 )
 
 HOMEBREW_REPOSITORY="$(brew --repository 2>/dev/null || true)"
@@ -41,7 +41,7 @@ H3 "Preparing $HOMEBREW_REPOSITORY"
 sudo chown -R "$USER:admin" "$HOMEBREW_REPOSITORY"
 if [ $HOMEBREW_PREFIX != $HOMEBREW_REPOSITORY ]
 then
-  ln -sf "$HOMEBREW_REPOSITORY/bin/brew" "$HOMEBREW_PREFIX/bin/brew"
+    ln -sf "$HOMEBREW_REPOSITORY/bin/brew" "$HOMEBREW_PREFIX/bin/brew"
 fi
 
 H2 "Downloading Homebrew..."
@@ -58,11 +58,11 @@ brew update
 
 H3 "Scheduling Homebrew update every six hours via cron (you might be prompted for permission)..."
 if ! crontab -l >/dev/null 2>&1; then
-  echo "$CRON_ENTRY" | crontab -
+    echo "$CRON_ENTRY" | crontab -
 else
-  if ! (crontab -l | fgrep -q "$CRON_ENTRY"); then
-    (crontab -l 2>/dev/null; echo "$CRON_ENTRY") | crontab -
-  fi
+    if ! (crontab -l | fgrep -q "$CRON_ENTRY"); then
+        (crontab -l 2>/dev/null; echo "$CRON_ENTRY") | crontab -
+    fi
 fi
 
 ${0%/*}/brew_install.sh

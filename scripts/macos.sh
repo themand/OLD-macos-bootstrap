@@ -255,28 +255,28 @@ defaults write com.apple.Safari SendDoNotTrackHTTPHeader -bool true
 H2 "Spotlight"
 H3 "Excluding searching for some items and sending search queries to Apple"
 defaults write com.apple.spotlight orderedItems -array \
-	'{"enabled" = 1;"name" = "APPLICATIONS";}' \
-	'{"enabled" = 1;"name" = "SYSTEM_PREFS";}' \
-	'{"enabled" = 1;"name" = "DIRECTORIES";}' \
-	'{"enabled" = 1;"name" = "PDF";}' \
-	'{"enabled" = 1;"name" = "DOCUMENTS";}' \
-	'{"enabled" = 1;"name" = "PRESENTATIONS";}' \
-	'{"enabled" = 1;"name" = "SPREADSHEETS";}' \
-	'{"enabled" = 1;"name" = "MESSAGES";}' \
-	'{"enabled" = 1;"name" = "CONTACT";}' \
-	'{"enabled" = 1;"name" = "EVENT_TODO";}' \
-	'{"enabled" = 0;"name" = "IMAGES";}' \
-	'{"enabled" = 1;"name" = "MUSIC";}' \
-	'{"enabled" = 1;"name" = "MOVIES";}' \
-	'{"enabled" = 0;"name" = "FONTS";}' \
-	'{"enabled" = 0;"name" = "BOOKMARKS";}' \
-	'{"enabled" = 0;"name" = "SOURCE";}' \
-	'{"enabled" = 0;"name" = "MENU_DEFINITION";}' \
-	'{"enabled" = 0;"name" = "MENU_OTHER";}' \
-	'{"enabled" = 0;"name" = "MENU_CONVERSION";}' \
-	'{"enabled" = 0;"name" = "MENU_EXPRESSION";}' \
-	'{"enabled" = 0;"name" = "MENU_WEBSEARCH";}' \
-	'{"enabled" = 0;"name" = "MENU_SPOTLIGHT_SUGGESTIONS";}'
+'{"enabled" = 1;"name" = "APPLICATIONS";}' \
+'{"enabled" = 1;"name" = "SYSTEM_PREFS";}' \
+'{"enabled" = 1;"name" = "DIRECTORIES";}' \
+'{"enabled" = 1;"name" = "PDF";}' \
+'{"enabled" = 1;"name" = "DOCUMENTS";}' \
+'{"enabled" = 1;"name" = "PRESENTATIONS";}' \
+'{"enabled" = 1;"name" = "SPREADSHEETS";}' \
+'{"enabled" = 1;"name" = "MESSAGES";}' \
+'{"enabled" = 1;"name" = "CONTACT";}' \
+'{"enabled" = 1;"name" = "EVENT_TODO";}' \
+'{"enabled" = 0;"name" = "IMAGES";}' \
+'{"enabled" = 1;"name" = "MUSIC";}' \
+'{"enabled" = 1;"name" = "MOVIES";}' \
+'{"enabled" = 0;"name" = "FONTS";}' \
+'{"enabled" = 0;"name" = "BOOKMARKS";}' \
+'{"enabled" = 0;"name" = "SOURCE";}' \
+'{"enabled" = 0;"name" = "MENU_DEFINITION";}' \
+'{"enabled" = 0;"name" = "MENU_OTHER";}' \
+'{"enabled" = 0;"name" = "MENU_CONVERSION";}' \
+'{"enabled" = 0;"name" = "MENU_EXPRESSION";}' \
+'{"enabled" = 0;"name" = "MENU_WEBSEARCH";}' \
+'{"enabled" = 0;"name" = "MENU_SPOTLIGHT_SUGGESTIONS";}'
 defaults write com.apple.lookup.shared LookupSuggestionsDisabled -int 1
 H3 "Reloading settings"
 sudo killall mds || true
