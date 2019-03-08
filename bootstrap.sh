@@ -17,6 +17,7 @@ ${0%/*}/scripts/dotfiles.sh || err
 ${0%/*}/scripts/hosts.sh || err
 ${0%/*}/scripts/jq.sh || err
 ${0%/*}/scripts/chrome.sh || err
+${0%/*}/scripts/filevault.sh || err
 
 H1 "Bootstrap finished!"
 H1 "System restart recommended"
