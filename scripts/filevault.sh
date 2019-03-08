@@ -28,8 +28,7 @@ if [[ $(fdesetup isactive) == "false" ]]; then
         sudo fdesetup enable
         H2 "Make sure you stored the recovery key in a secure offline location."
         reqyes
-        H2WARN "Encryption will be enabled after next reboot"
-        H3 "It's recommended to reboot just after bootstrap script finishes running."
+        H2WARN "Encryption enabled and in progress"
     else
         H2 "Encryption will NOT be enabled"
     fi
