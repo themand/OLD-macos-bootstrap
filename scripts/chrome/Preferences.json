@@ -55,7 +55,7 @@
     "enabled": true
   },
   "translate_blocked_languages": [
-    "en"
+    "en", "pl"
   ],
   "payments": {
     "can_make_payment_enabled": false

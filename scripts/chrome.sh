@@ -12,7 +12,7 @@ curl https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg > $DIR/google
 
 H2 "Installing..."
 hdiutil attach -noverify -nobrowse -mountpoint $DIR/mount $DIR/googlechrome.dmg > /dev/null
-cp -r $DIR/mount/*.app /Applications
+cp -R $DIR/mount/*.app /Applications
 hdiutil detach $DIR/mount > /dev/null
 rm -r $DIR
 
