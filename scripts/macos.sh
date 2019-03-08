@@ -13,15 +13,22 @@ sudo softwareupdate -ia
 H2 "Configuring automatic software update"
 H3 "Enabling the automatic update check"
 defaults write com.apple.SoftwareUpdate AutomaticCheckEnabled -bool true
+sudo defaults write /Library/Preferences/com.apple.SoftwareUpdate.plist AutomaticCheckEnabled -bool true
 H3 "Check for software updates daily, not just once per week"
 defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 H3 "Download newly available updates in background"
 defaults write com.apple.SoftwareUpdate AutomaticDownload -int 1
+sudo defaults write /Library/Preferences/com.apple.SoftwareUpdate.plist AutomaticDownload -bool true
 H3 "Auto install System data files & security updates"
 defaults write com.apple.SoftwareUpdate CriticalUpdateInstall -int 1
 defaults write com.apple.SoftwareUpdate ConfigDataInstall -int 1
+sudo defaults write /Library/Preferences/com.apple.SoftwareUpdate.plist AutomaticallyInstallMacOSUpdates -bool true
+sudo defaults write /Library/Preferences/com.apple.SoftwareUpdate.plist ConfigDataInstall -bool true
+sudo defaults write /Library/Preferences/com.apple.SoftwareUpdate.plist CriticalUpdateInstall -bool true
 H3 "Allow the App Store to reboot machine on macOS updates"
 defaults write com.apple.commerce AutoUpdateRestartRequired -bool true
+H3 "Auto update App Store applications"
+sudo defaults write /Library/Preferences/com.apple.commerce AutoUpdate -bool true
 
 H2 "Installing Xcode Command Line Tools"
 if ! $(xcode-select -p &>/dev/null); then
@@ -297,6 +304,15 @@ defaults write com.apple.TextEdit RichText -int 0
 H3 "Open and save files as UTF-8 in TextEdit"
 defaults write com.apple.TextEdit PlainTextEncoding -int 4
 defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
+
+H2 "Other privacy and security settings"
+H3 "Privacy: Out put of Apple ad tracking"
+defaults write com.apple.AdLib forceLimitAdTracking -bool true
+H3 "Security: Disable captive portal"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.captive.control.plist Active -bool false
+H3 "Security/Privacy: Disable Bonjour multicast advertisements"
+sudo defaults write /Library/Preferences/com.apple.mDNSResponder.plist NoMulticastAdvertisements -bool YES
+
 
 H2 "Killing affected applications to restart them and reload config"
 for app in "Activity Monitor" \
