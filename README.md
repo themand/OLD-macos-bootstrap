@@ -18,4 +18,4 @@ rm -r macos-bootstrap-master macos-bootstrap-master.tar.gz
 
 #### Next steps
 
-Not everything can be automated or I did not bother to automate everything. Proceed to [list of manual steps](MANUAL.md) to perform on a new mac. 
+Not everything can be automated or I did not bother to automate everything. Proceed to [list of manual steps](manual/INDEX.md) to perform on a new mac. 

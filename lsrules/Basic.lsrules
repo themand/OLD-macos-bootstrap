@@ -1,0 +1,16 @@
+{
+  "description" : "Most basic rules",
+  "name" : "Basic",
+  "rules" : [
+    {
+      "action" : "allow",
+      "creationDate" : 1552021185.668129,
+      "modificationDate" : 1552021185.668129,
+      "owner" : "me",
+      "ports" : "53",
+      "process" : "any",
+      "protocol" : "udp",
+      "remote" : "local-net"
+    }
+  ]
+}
