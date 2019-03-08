@@ -3,6 +3,17 @@
 set -euo pipefail
 . ${0%/*}/../includes/functions.sh
 
+H2WARN Homebrew installation is currently disabled
+
+# When re-enabling, add the following to dotfiles/.bash_profile
+#export HOMEBREW_NO_ANALYTICS=1
+#export HOMEBREW_NO_AUTO_UPDATE=1
+#export HOMEBREW_NO_GITHUB_API=1
+#export HOMEBREW_NO_INSECURE_REDIRECT=1
+#export HOMEBREW_CASK_OPTS=--require-sha
+
+exit
+
 CRON_ENTRY='0 */6 * * * /usr/local/bin/brew update &>/dev/null'
 
 H1 "Homebrew"

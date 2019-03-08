@@ -8,8 +8,3 @@ alias du="du -h"
 export PATH="$HOME/bin:$PATH";
 export EDITOR='vi';
 export GREP_OPTIONS='--color=auto';
-export HOMEBREW_NO_ANALYTICS=1
-export HOMEBREW_NO_AUTO_UPDATE=1
-export HOMEBREW_NO_GITHUB_API=1
-export HOMEBREW_NO_INSECURE_REDIRECT=1
-export HOMEBREW_CASK_OPTS=--require-sha
