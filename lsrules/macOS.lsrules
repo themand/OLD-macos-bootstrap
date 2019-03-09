@@ -49,6 +49,16 @@
       "process" : "\/usr\/libexec\/nsurlsessiond",
       "protocol" : "tcp",
       "remote-hosts" : "mesu.apple.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1552170764.658232,
+      "modificationDate" : 1552170764.658232,
+      "owner" : "system",
+      "ports" : "123",
+      "process" : "\/usr\/libexec\/timed",
+      "protocol" : "udp",
+      "remote-hosts" : "time-macos.apple.com"
     }
   ]
 }
