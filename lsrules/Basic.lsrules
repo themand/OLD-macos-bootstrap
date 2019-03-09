@@ -11,6 +11,15 @@
       "process" : "any",
       "protocol" : "udp",
       "remote" : "local-net"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1552166549.7802482,
+      "modificationDate" : 1552167205.355155,
+      "owner" : "system",
+      "process" : "\/usr\/libexec\/configd",
+      "protocol" : "ipv6-icmp",
+      "remote" : "local-net"
     }
   ]
 }

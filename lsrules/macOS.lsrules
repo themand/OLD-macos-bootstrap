@@ -1,0 +1,44 @@
+{
+  "description" : "Required for macOS and iCloud services",
+  "name" : "macOS",
+  "rules" : [
+    {
+      "action" : "allow",
+      "creationDate" : 1552165018.826432,
+      "modificationDate" : 1552165018.826432,
+      "owner" : "system",
+      "process" : "\/System\/Library\/PrivateFrameworks\/ApplePushService.framework\/apsd",
+      "remote-domains" : "push.apple.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1552166618.5950851,
+      "modificationDate" : 1552166618.5950851,
+      "owner" : "system",
+      "ports" : "443",
+      "process" : "\/System\/Library\/PrivateFrameworks\/GeoServices.framework\/Versions\/A\/XPCServices\/com.apple.geod.xpc\/Contents\/MacOS\/com.apple.geod",
+      "protocol" : "tcp",
+      "remote-domains" : "ls.apple.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1552166612.960465,
+      "modificationDate" : 1552166612.960465,
+      "owner" : "me",
+      "ports" : "443",
+      "process" : "\/System\/Library\/PrivateFrameworks\/GeoServices.framework\/Versions\/A\/XPCServices\/com.apple.geod.xpc\/Contents\/MacOS\/com.apple.geod",
+      "protocol" : "tcp",
+      "remote-domains" : "ls.apple.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1552166565.1711168,
+      "modificationDate" : 1552166565.1711168,
+      "owner" : "me",
+      "ports" : "443",
+      "process" : "\/System\/Library\/PrivateFrameworks\/AOSKit.framework\/Versions\/A\/XPCServices\/com.apple.iCloudHelper.xpc\/Contents\/MacOS\/com.apple.iCloudHelper",
+      "protocol" : "tcp",
+      "remote-hosts" : "setup.icloud.com"
+    }
+  ]
+}
