@@ -79,6 +79,46 @@
       "process" : "\/System\/Library\/CoreServices\/SystemUIServer.app\/Contents\/MacOS\/SystemUIServer",
       "protocol" : "udp",
       "remote" : "local-net"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1552171928.7055058,
+      "modificationDate" : 1552171928.7055058,
+      "owner" : "me",
+      "ports" : "443",
+      "process" : "\/System\/Library\/PrivateFrameworks\/CloudKitDaemon.framework\/Support\/cloudd",
+      "protocol" : "tcp",
+      "remote-hosts" : "gateway.icloud.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1552171883.3192039,
+      "modificationDate" : 1552171883.3192039,
+      "owner" : "system",
+      "ports" : "443",
+      "process" : "\/usr\/libexec\/locationd",
+      "protocol" : "tcp",
+      "remote-hosts" : "gs-loc.apple.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1552171908.399987,
+      "modificationDate" : 1552171908.399987,
+      "owner" : "me",
+      "ports" : "443",
+      "process" : "\/System\/Library\/CoreServices\/Spotlight.app\/Contents\/MacOS\/Spotlight",
+      "protocol" : "tcp",
+      "remote-hosts" : "apple-finance.query.yahoo.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1552172156.8003149,
+      "modificationDate" : 1552172156.8003149,
+      "owner" : "me",
+      "ports" : "443",
+      "process" : "\/System\/Library\/PrivateFrameworks\/Tourist.framework\/Versions\/A\/Resources\/touristd",
+      "protocol" : "tcp",
+      "remote-hosts" : "help.apple.com"
     }
   ]
 }
