@@ -3,7 +3,7 @@
 * [Download](https://www.google.com/chrome/) and install
 * Run script to configure default profile
     ```bash
-    macos-bootstrap/scripts/chrome_profile.sh
+    chrome-autoconfig
     ```
 
 ## Install Extensions

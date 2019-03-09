@@ -288,6 +288,7 @@ defaults write com.apple.lookup.shared LookupSuggestionsDisabled -int 1
 H3 "Reloading settings"
 sudo killall mds || true
 H3 "Ensuring indexing is enabled for the main volume"
+sleep 1
 sudo mdutil -i on /
 H3 "Rebuilding the index from scratch"
 sudo mdutil -E

@@ -1,7 +1,36 @@
 #!/usr/bin/env bash
 
 set -euo pipefail
-. ${0%/*}/../includes/functions.sh
+
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+GRAY='\033[0;90m'
+CYAN='\033[0;36m'
+YELLOW='\033[0;33m'
+NC='\033[0m'
+
+H2() {
+    echo -e "${CYAN} >> $@${NC}"
+}
+
+H2WARN() {
+    echo -e "${RED} >> $@${NC}"
+}
+
+H3() {
+    echo -e "${GRAY}  > $@${NC}"
+}
+
+yesno() {
+    printf "${GREEN}  > $@ ${NC}[Y/n]: "
+    read -n 1 -r
+    if [[ ! -z "$REPLY" ]]; then echo; fi
+    if [[ $REPLY =~ ^[yY] || -z "$REPLY" ]]; then
+        YESNO=true
+    else
+        YESNO=false
+    fi
+}
 
 if [[ -z "${1-}" ]]; then
     yesno "No profile directory specified. Proceed with Default?"
@@ -26,10 +55,10 @@ DIR=~/Library/Application\ Support/Google/Chrome/$PROFILE
 mkdir -p "$DIR"
 
 if [ -f "$DIR/Preferences" ]; then
-    jq -s '.[0] * .[1]' "$DIR"/Preferences ${0%/*}/chrome/Preferences.json > "$DIR"/Preferences.tmp
+    jq -s '.[0] * .[1]' "$DIR"/Preferences ${0%/*}/../etc/chrome-autoconfig.json > "$DIR"/Preferences.tmp
     mv "$DIR"/Preferences.tmp "$DIR"/Preferences
 else
-    cp ${0%/*}/chrome/Preferences.json "$DIR"/Preferences
+    cp ${0%/*}/../etc/chrome-autoconfig.json "$DIR"/Preferences
 fi
 
 H3 "Disabled saving passwords and automatic logging in"

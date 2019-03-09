@@ -12,11 +12,12 @@ if ! $YESNO; then
     exit 1
 fi
 
-${0%/*}/scripts/macos.sh || err
-${0%/*}/scripts/dotfiles.sh || err
-${0%/*}/scripts/hosts.sh || err
-${0%/*}/scripts/jq.sh || err
-${0%/*}/scripts/filevault.sh || err
+${0%/*}/bootstrap/macos.sh || err
+${0%/*}/bootstrap/dotfiles.sh || err
+${0%/*}/bootstrap/install-tools.sh || err
+${0%/*}/bootstrap/install-scripts.sh || err
+${0%/*}/bootstrap/hosts.sh || err
+${0%/*}/bootstrap/filevault.sh || err
 
 H1 "Bootstrap finished!"
 H1 "System restart recommended"
