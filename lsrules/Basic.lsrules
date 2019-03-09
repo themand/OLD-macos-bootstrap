@@ -30,7 +30,7 @@
       "ports" : "68",
       "process" : "\/usr\/libexec\/configd",
       "protocol" : "udp",
-      "remote" : "local-net"
+      "remote" : "any"
     },
     {
       "action" : "allow",
