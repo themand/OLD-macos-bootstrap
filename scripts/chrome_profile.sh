@@ -1,11 +1,24 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
 . ${0%/*}/../includes/functions.sh
 
-PROFILE="$1"
-[ ! -z "$PROFILE" ] || PROFILE=Default
+if [[ -z "${1-}" ]]; then
+    yesno "No profile directory specified. Proceed with Default?"
+    if [[ "$YESNO" == "false" ]]; then
+        H2WARN Aborting
+        exit 1
+    fi
+    PROFILE=Default
+else
+    PROFILE="$1"
+fi
 
-set -euo pipefail
+H2 "Configuring Chrome global settings..."
+H3 "Use the system-native print preview dialog"
+defaults write com.google.Chrome DisablePrintPreview -bool true
+H3 "Expand the print dialog by default"
+defaults write com.google.Chrome PMPrintingExpandedStateForPrint2 -bool true
 
 H2 "Configuring profile $PROFILE"
 

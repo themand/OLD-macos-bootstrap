@@ -1,6 +1,12 @@
-# Chrome configuration
+# Google Chrome
 
-## Extensions
+* [Download](https://www.google.com/chrome/) and install
+* Run script to configure default profile
+    ```bash
+    macos-bootstrap/scripts/chrome_profile.sh
+    ```
+
+## Install Extensions
 
 ### [uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm)
 * Settings:
