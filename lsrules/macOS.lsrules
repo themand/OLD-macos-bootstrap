@@ -119,6 +119,26 @@
       "process" : "\/System\/Library\/PrivateFrameworks\/Tourist.framework\/Versions\/A\/Resources\/touristd",
       "protocol" : "tcp",
       "remote-hosts" : "help.apple.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1552172509.284544,
+      "modificationDate" : 1552172509.284544,
+      "owner" : "me",
+      "ports" : "443",
+      "process" : "\/System\/Library\/PrivateFrameworks\/GeoServices.framework\/Versions\/A\/XPCServices\/com.apple.geod.xpc\/Contents\/MacOS\/com.apple.geod",
+      "protocol" : "tcp",
+      "remote-domains" : "configuration.apple.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1552172528.0224061,
+      "modificationDate" : 1552172528.0224061,
+      "owner" : "me",
+      "ports" : "443",
+      "process" : "\/System\/Library\/PrivateFrameworks\/CommerceKit.framework\/Versions\/A\/Resources\/commerce",
+      "protocol" : "tcp",
+      "remote-domains" : "itunes.apple.com"
     }
   ]
 }
