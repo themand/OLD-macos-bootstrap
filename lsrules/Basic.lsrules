@@ -1,5 +1,5 @@
 {
-  "description" : "Most basic rules",
+  "description" : "Basic networking and Little Snitch helpers",
   "name" : "Basic",
   "rules" : [
     {
@@ -20,6 +20,25 @@
       "process" : "\/usr\/libexec\/configd",
       "protocol" : "ipv6-icmp",
       "remote" : "local-net"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1552168643.654799,
+      "modificationDate" : 1552168643.654799,
+      "owner" : "me",
+      "ports" : "443",
+      "process" : "\/Library\/Little Snitch\/Little Snitch Helper.app\/Contents\/MacOS\/Little Snitch Helper",
+      "remote-hosts" : "wtf.obdev.at"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1552168533.579175,
+      "modificationDate" : 1552168533.579175,
+      "owner" : "system",
+      "ports" : "443",
+      "process" : "\/Library\/Little Snitch\/Little Snitch Daemon.bundle\/Contents\/XPCServices\/Little Snitch URL Downloader.xpc\/Contents\/MacOS\/Little Snitch URL Downloader",
+      "protocol" : "tcp",
+      "remote-hosts" : "raw.githubusercontent.com"
     }
   ]
 }
