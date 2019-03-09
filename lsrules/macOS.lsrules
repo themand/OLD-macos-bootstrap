@@ -39,6 +39,16 @@
       "process" : "\/System\/Library\/PrivateFrameworks\/AOSKit.framework\/Versions\/A\/XPCServices\/com.apple.iCloudHelper.xpc\/Contents\/MacOS\/com.apple.iCloudHelper",
       "protocol" : "tcp",
       "remote-hosts" : "setup.icloud.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1552170422.9465861,
+      "modificationDate" : 1552170422.9465861,
+      "owner" : "system",
+      "ports" : "443",
+      "process" : "\/usr\/libexec\/nsurlsessiond",
+      "protocol" : "tcp",
+      "remote-hosts" : "mesu.apple.com"
     }
   ]
 }
