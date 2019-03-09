@@ -138,7 +138,17 @@
       "ports" : "443",
       "process" : "\/System\/Library\/PrivateFrameworks\/CommerceKit.framework\/Versions\/A\/Resources\/commerce",
       "protocol" : "tcp",
-      "remote-domains" : "itunes.apple.com"
+      "remote-domains" : "apple.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1552173083.012754,
+      "modificationDate" : 1552173083.012754,
+      "owner" : "me",
+      "ports" : "443",
+      "process" : "\/System\/Library\/CoreServices\/Stocks.app\/Contents\/PlugIns\/com.apple.ncplugin.stocks.appex\/Contents\/MacOS\/com.apple.ncplugin.stocks",
+      "protocol" : "tcp",
+      "remote-domains" : "apple-finance.query.yahoo.com"
     }
   ]
 }
