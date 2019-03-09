@@ -31,7 +31,7 @@ fi
 
 TMPFILE="/tmp/hosts-update-$(uuidgen)"
 if ! DOWNLOADED=$(curl -sS $URL 2>&1); then
-    err "Error downloading hosts blacklist: $DOWNLOADED"
+    err 106 "Error downloading hosts blacklist: $DOWNLOADED"
 fi
 FILTERED=$(echo "$DOWNLOADED" | grep -E "^0.0.0.0|^#|^$")
 (
