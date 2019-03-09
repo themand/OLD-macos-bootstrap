@@ -65,16 +65,6 @@
       "process" : "\/Applications\/Google Chrome.app\/Contents\/MacOS\/Google Chrome",
       "protocol" : "udp",
       "remote" : "any"
-    },
-    {
-      "action" : "allow",
-      "creationDate" : 1552166774.4632459,
-      "modificationDate" : 1552166774.4632459,
-      "owner" : "me",
-      "ports" : "443",
-      "process" : "\/Users\/*\/Library\/Google\/GoogleSoftwareUpdate\/GoogleSoftwareUpdate.bundle\/Contents\/Resources\/GoogleSoftwareUpdateAgent.app\/Contents\/MacOS\/GoogleSoftwareUpdateAgent",
-      "protocol" : "tcp",
-      "remote-hosts" : "tools.google.com"
     }
   ]
 }
