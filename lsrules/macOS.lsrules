@@ -59,6 +59,26 @@
       "process" : "\/usr\/libexec\/timed",
       "protocol" : "udp",
       "remote-hosts" : "time-macos.apple.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1552171373.9948211,
+      "modificationDate" : 1552171373.9948211,
+      "owner" : "me",
+      "ports" : "443",
+      "process" : "\/usr\/libexec\/nsurlsessiond",
+      "protocol" : "tcp",
+      "remote-hosts" : "gateway.icloud.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1552171328.8321261,
+      "modificationDate" : 1552171451.6767259,
+      "owner" : "me",
+      "ports" : "192",
+      "process" : "\/System\/Library\/CoreServices\/SystemUIServer.app\/Contents\/MacOS\/SystemUIServer",
+      "protocol" : "udp",
+      "remote" : "local-net"
     }
   ]
 }

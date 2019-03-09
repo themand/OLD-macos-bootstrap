@@ -23,6 +23,17 @@
     },
     {
       "action" : "allow",
+      "creationDate" : 1552171251.5407119,
+      "direction" : "incoming",
+      "modificationDate" : 1552171384.994823,
+      "owner" : "system",
+      "ports" : "68",
+      "process" : "\/usr\/libexec\/configd",
+      "protocol" : "udp",
+      "remote" : "local-net"
+    },
+    {
+      "action" : "allow",
       "creationDate" : 1552168643.654799,
       "modificationDate" : 1552168643.654799,
       "owner" : "me",
