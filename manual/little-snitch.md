@@ -28,19 +28,19 @@ Install. Restart will be required.
 
 * Subscribe to rule groups (all or selected, remember to set them as _Active_):
 
-    * **Basic:** basic networking rules to allow computer connect to network using DHCP, allow DNS queries, allow Little Snitch updates and helper. 
+    * **Basic:** basic networking rules to allow computer connect to network using DHCP, allow DNS queries, allow Little Snitch updates and helper.<br />
     `https://raw.githubusercontent.com/themand/macos-bootstrap/master/lsrules/Basic.lsrules`
 
-    * **macOS:** required for macOS and iCloud services.
+    * **macOS:** required for macOS and iCloud services.<br />
     `https://raw.githubusercontent.com/themand/macos-bootstrap/master/lsrules/macOS.lsrules`
 
-    * **Restricted Networking:** Disables NetBIOS, Multicast DNS (Bonjour), etc. Recommended to use if you don't need this features all the time and disable ruleset when you need to use them. 
+    * **Restricted Networking:** Disables NetBIOS, Multicast DNS (Bonjour), etc. Recommended to use if you don't need this features all the time and disable ruleset when you need to use them.<br /> 
     `https://raw.githubusercontent.com/themand/macos-bootstrap/master/lsrules/Restricted%20Networking.lsrules`
 
-    * **Google Chrome**
+    * **Google Chrome**<br />
     `https://raw.githubusercontent.com/themand/macos-bootstrap/master/lsrules/Google%20Chrome.lsrules`
 
-    * **Webstorm**
+    * **Webstorm**<br />
     `https://raw.githubusercontent.com/themand/macos-bootstrap/master/lsrules/Webstorm.lsrules`
     
 * Factory Rules: **Disable** all rules for _Any Process_
