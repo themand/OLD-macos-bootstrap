@@ -286,12 +286,11 @@ defaults write com.apple.spotlight orderedItems -array \
 '{"enabled" = 0;"name" = "MENU_SPOTLIGHT_SUGGESTIONS";}'
 defaults write com.apple.lookup.shared LookupSuggestionsDisabled -int 1
 H3 "Reloading settings"
-sudo killall mds || true
+sudo killall mds
 H3 "Ensuring indexing is enabled for the main volume"
-sleep 1
 sudo mdutil -i on /
 H3 "Rebuilding the index from scratch"
-sudo mdutil -E
+sudo mdutil -E /
 
 H2 "Terminal.app"
 H3 "Only use UTF-8 in Terminal.app"
@@ -309,11 +308,12 @@ defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
 H2 "Other privacy and security settings"
 H3 "Privacy: Out put of Apple ad tracking"
 defaults write com.apple.AdLib forceLimitAdTracking -bool true
+defaults write com.apple.AdLib AD_DEVICE_IDFA -string '00000000-0000-0000-0000-000000000000'
+killall adprivacyd
 H3 "Security: Disable captive portal"
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.captive.control.plist Active -bool false
 H3 "Security/Privacy: Disable Bonjour multicast advertisements"
 sudo defaults write /Library/Preferences/com.apple.mDNSResponder.plist NoMulticastAdvertisements -bool YES
-
 
 H2 "Killing affected applications to restart them and reload config"
 for app in "Activity Monitor" \
