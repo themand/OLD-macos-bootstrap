@@ -2,8 +2,12 @@
 
 * Language
 * Security & Privacy
-    * _Require password immediately after sleep_
-    * _Show a message when the screen is locked_
+    * General
+        * _Require password immediately after sleep_
+        * _Show a message when the screen is locked_
+    * Privacy
+        * Advertising
+            * Limit Ad Tracking
 * Displays
     * Enable Night Shift
 * Keyboard
