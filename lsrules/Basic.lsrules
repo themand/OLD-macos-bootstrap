@@ -50,6 +50,16 @@
       "process" : "\/Library\/Little Snitch\/Little Snitch Daemon.bundle\/Contents\/XPCServices\/Little Snitch URL Downloader.xpc\/Contents\/MacOS\/Little Snitch URL Downloader",
       "protocol" : "tcp",
       "remote-hosts" : "raw.githubusercontent.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1552241489.389966,
+      "modificationDate" : 1552241489.389966,
+      "owner" : "me",
+      "ports" : "443",
+      "process" : "\/Library\/Little Snitch\/Little Snitch Software Update.app\/Contents\/MacOS\/Little Snitch Software Update",
+      "protocol" : "tcp",
+      "remote-hosts" : "sw-update.obdev.at"
     }
   ]
 }
