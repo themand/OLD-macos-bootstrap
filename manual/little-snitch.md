@@ -28,20 +28,11 @@ Install. Restart will be required.
 
 * Subscribe to rule groups (all or selected, remember to set them as _Active_):
 
-    * **Basic:** basic networking rules to allow computer connect to network using DHCP, allow DNS queries, allow Little Snitch updates and helper.<br />
-    `https://raw.githubusercontent.com/themand/macos-bootstrap/master/lsrules/Basic.lsrules`
-
-    * **macOS:** required for macOS and iCloud services.<br />
-    `https://raw.githubusercontent.com/themand/macos-bootstrap/master/lsrules/macOS.lsrules`
-
-    * **Restricted Networking:** Disables NetBIOS, Multicast DNS (Bonjour), etc. Recommended to use if you don't need this features all the time and disable ruleset when you need to use them.<br /> 
-    `https://raw.githubusercontent.com/themand/macos-bootstrap/master/lsrules/Restricted%20Networking.lsrules`
-
-    * **Google Chrome**<br />
-    `https://raw.githubusercontent.com/themand/macos-bootstrap/master/lsrules/Google%20Chrome.lsrules`
-
-    * **Webstorm**<br />
-    `https://raw.githubusercontent.com/themand/macos-bootstrap/master/lsrules/Webstorm.lsrules`
+    * **[Basic](https://raw.githubusercontent.com/themand/macos-bootstrap/master/lsrules/Basic.lsrules):** basic networking rules to allow computer connect to network using DHCP, allow DNS queries, allow Little Snitch updates and helper.
+    * **[macOS](https://raw.githubusercontent.com/themand/macos-bootstrap/master/lsrules/macOS.lsrules):** required for macOS and iCloud services.
+    * **[Restricted Networking](https://raw.githubusercontent.com/themand/macos-bootstrap/master/lsrules/Restricted%20Networking.lsrules):** Disables NetBIOS, Multicast DNS (Bonjour), etc. Recommended to use if you don't need this features all the time and disable ruleset when you need to use them. 
+    * **[Google Chrome](https://raw.githubusercontent.com/themand/macos-bootstrap/master/lsrules/Google%20Chrome.lsrules)**
+    * **[Webstorm](https://raw.githubusercontent.com/themand/macos-bootstrap/master/lsrules/Webstorm.lsrules)**
     
 * Factory Rules: **Disable** all rules for _Any Process_
 * If enabled, disable subscriptions to both rule groups:
