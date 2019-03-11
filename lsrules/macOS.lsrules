@@ -149,6 +149,136 @@
       "process" : "\/System\/Library\/CoreServices\/Stocks.app\/Contents\/PlugIns\/com.apple.ncplugin.stocks.appex\/Contents\/MacOS\/com.apple.ncplugin.stocks",
       "protocol" : "tcp",
       "remote-domains" : "apple-finance.query.yahoo.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1552323892.8466458,
+      "modificationDate" : 1552323892.8466458,
+      "owner" : "me",
+      "ports" : "443",
+      "process" : "\/usr\/libexec\/adprivacyd",
+      "protocol" : "tcp",
+      "remote-domains" : "apple.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1552241289.5308518,
+      "modificationDate" : 1552241289.5308518,
+      "owner" : "me",
+      "ports" : "443",
+      "process" : "\/System\/Library\/PrivateFrameworks\/AppStoreDaemon.framework\/Support\/appstoreagent",
+      "protocol" : "tcp",
+      "remote-domains" : "itunes.apple.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1552323800.8757691,
+      "modificationDate" : 1552323800.8757691,
+      "owner" : "system",
+      "ports" : "443",
+      "process" : "\/System\/Library\/PrivateFrameworks\/AssetCacheServices.framework\/Versions\/A\/XPCServices\/AssetCacheLocatorService.xpc\/Contents\/MacOS\/AssetCacheLocatorService",
+      "protocol" : "tcp",
+      "remote-hosts" : "lcdn-locator.apple.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1552323840.767921,
+      "modificationDate" : 1552323840.767921,
+      "owner" : "me",
+      "ports" : "80",
+      "process" : "\/System\/Library\/PrivateFrameworks\/Noticeboard.framework\/Versions\/A\/Resources\/nbagent.app\/Contents\/MacOS\/nbagent",
+      "protocol" : "tcp",
+      "remote-hosts" : "swcdn.apple.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1552323827.037133,
+      "modificationDate" : 1552323827.037133,
+      "owner" : "me",
+      "ports" : "443",
+      "process" : "\/System\/Library\/PrivateFrameworks\/Noticeboard.framework\/Versions\/A\/Resources\/nbagent.app\/Contents\/MacOS\/nbagent",
+      "protocol" : "tcp",
+      "remote-hosts" : "swscan.apple.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1552323818.8407822,
+      "modificationDate" : 1552323818.8407822,
+      "owner" : "system",
+      "ports" : "80",
+      "process" : "\/usr\/libexec\/nsurlsessiond",
+      "protocol" : "tcp",
+      "remote-hosts" : "appldnld.apple.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1552323733.747364,
+      "modificationDate" : 1552323733.747364,
+      "owner" : "system",
+      "ports" : "443",
+      "process" : "\/usr\/libexec\/nsurlsessiond",
+      "protocol" : "tcp",
+      "remote-domains" : "apple.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1552241800.746604,
+      "modificationDate" : 1552241800.746604,
+      "owner" : "me",
+      "ports" : "443",
+      "process" : "\/System\/Library\/PrivateFrameworks\/CoreParsec.framework\/parsecd",
+      "protocol" : "tcp",
+      "remote-domains" : "smoot.apple.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1552323884.3612208,
+      "modificationDate" : 1552323884.3612208,
+      "owner" : "system",
+      "ports" : "443",
+      "process" : "\/usr\/libexec\/rtcreportingd",
+      "protocol" : "tcp",
+      "remote-domains" : "apple.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1552323783.9809799,
+      "modificationDate" : 1552323783.9809799,
+      "owner" : "system",
+      "ports" : "443",
+      "process" : "\/System\/Library\/CoreServices\/Software Update.app\/Contents\/Resources\/softwareupdated",
+      "protocol" : "tcp",
+      "remote-hosts" : "swscan.apple.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1552323835.268085,
+      "modificationDate" : 1552323835.268085,
+      "owner" : "me",
+      "ports" : "443",
+      "process" : "\/System\/Library\/PrivateFrameworks\/CommerceKit.framework\/Versions\/A\/Resources\/storeassetd",
+      "protocol" : "tcp",
+      "remote-domains" : "itunes.apple.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1552241461.9796572,
+      "modificationDate" : 1552241461.9796572,
+      "owner" : "system",
+      "ports" : "80",
+      "process" : "\/usr\/libexec\/trustd",
+      "protocol" : "tcp",
+      "remote-hosts" : "ocsp.apple.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1552243527.202704,
+      "modificationDate" : 1552243527.202704,
+      "owner" : "me",
+      "ports" : "80",
+      "process" : "\/usr\/libexec\/trustd",
+      "protocol" : "tcp",
+      "remote" : "any"
     }
   ]
 }
