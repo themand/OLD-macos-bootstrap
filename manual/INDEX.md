@@ -6,5 +6,7 @@
 * Install essentials:
     * [Little Snich](little-snitch.md)
     * [Google Chrome](chrome.md)
+* Install and configure backup and sync
+    * [Tarsnap](tarsnap.md)
 * Install development tools:
     * [Webstorm](webstorm.md)
