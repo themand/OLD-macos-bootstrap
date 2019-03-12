@@ -22,11 +22,11 @@ H2 "shamir-sharing"
 SHAMIR_TMPDIR="${TMPDIR}$(uuidgen)"
 mkdir -p $SHAMIR_TMPDIR
 H3 "Downloading..."
-curl -L -o ${SHAMIR_TMPDIR}/macos-shamir-split https://github.com/themand/shamir-sharing/releases/download/v1.0.0/macos-shamir-split > /dev/null
-curl -L -o ${SHAMIR_TMPDIR}/macos-shamir-restore https://github.com/themand/shamir-sharing/releases/download/v1.0.0/macos-shamir-restore > /dev/null
+curl -L -o ${SHAMIR_TMPDIR}/macos-shamir-split https://github.com/themand/shamir-sharing/releases/download/v1.0.1/macos-shamir-split > /dev/null
+curl -L -o ${SHAMIR_TMPDIR}/macos-shamir-restore https://github.com/themand/shamir-sharing/releases/download/v1.0.1/macos-shamir-restore > /dev/null
 H3 "Verifying checksums..."
-SHAMIR_VALID_SPLIT="4a0e6ecea4f3bdb7c919a0a26fc8fc0b0ec19d43a512dfa3d4d368b40e080ab4"
-SHAMIR_VALID_RESTORE="6189b9e22b0e938f1239f5ffa295b508564b09d93e0a5fcae5ce2ac26d58f718"
+SHAMIR_VALID_SPLIT="4503738588fdcfc4ac4b5f9c2fbf873ea6a5bdcc1941b17cf24d21a546c3ac64"
+SHAMIR_VALID_RESTORE="01aef891489658921f84f71c1f948eb95377b9c63a23d56d6bff5b0958fe6daf"
 SHAMIR_SHA_SPLIT=$(shasum -p -a 256 $SHAMIR_TMPDIR/macos-shamir-split | cut -d' ' -f1)
 SHAMIR_SHA_RESTORE=$(shasum -p -a 256 $SHAMIR_TMPDIR/macos-shamir-restore | cut -d' ' -f1)
 if [[ "$SHAMIR_SHA_SPLIT" == "$SHAMIR_VALID_SPLIT" ]] \
