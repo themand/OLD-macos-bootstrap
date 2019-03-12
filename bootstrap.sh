@@ -14,8 +14,8 @@ fi
 
 ${0%/*}/bootstrap/macos.sh || err
 ${0%/*}/bootstrap/dotfiles.sh || err
-${0%/*}/bootstrap/install-tools.sh || err
 ${0%/*}/bootstrap/install-brew.sh || err
+${0%/*}/bootstrap/install-tools.sh || err
 ${0%/*}/bootstrap/install-scripts.sh || err
 ${0%/*}/bootstrap/hosts.sh || err
 ${0%/*}/bootstrap/filevault.sh || err
