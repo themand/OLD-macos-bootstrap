@@ -329,6 +329,16 @@
       "process" : "\/usr\/libexec\/syspolicyd",
       "protocol" : "tcp",
       "remote-domains" : "apple-cloudkit.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1552505577.224189,
+      "modificationDate" : 1552505577.224189,
+      "owner" : "me",
+      "ports" : "443",
+      "process" : "\/System\/Library\/PrivateFrameworks\/AuthKit.framework\/Versions\/A\/Support\/akd",
+      "protocol" : "tcp",
+      "remote-domains" : "apple.com"
     }
   ]
 }
