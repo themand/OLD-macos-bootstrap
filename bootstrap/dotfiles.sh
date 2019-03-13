@@ -4,4 +4,4 @@ set -euo pipefail
 . ${0%/*}/../includes/functions.sh
 
 H1 "Installing dotfiles to home directory"
-cp -r $(echo ${0%/*} | sed 's/\/bootstrap/\/assets\/dotfiles/g')/ ~/
+cp -r $(echo ${0%/*})/assets/dotfiles/ ~/

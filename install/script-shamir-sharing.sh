@@ -3,21 +3,6 @@
 set -euo pipefail
 . ${0%/*}/../includes/functions.sh
 
-H1 "Installing custom scripts"
-sudo mkdir -p /usr/local/bin
-
-H2 "hosts-update"
-sudo cp ${0%/*}/../scripts/hosts-update.sh /usr/local/bin/hosts-update
-if [[ ! -f "/etc/hosts_permanent" ]]; then
-    H3 "Copying /etc/hosts to /etc/hosts_permanent"
-    sudo cp /etc/hosts /etc/hosts_permanent
-fi
-
-H2 "chrome-autoconfig"
-sudo cp ${0%/*}/../scripts/chrome-autoconfig.sh /usr/local/bin/chrome-autoconfig
-sudo mkdir -p /usr/local/etc
-sudo cp ${0%/*}/../scripts/assets/chrome-autoconfig/chrome-autoconfig.json /usr/local/etc
-
 H2 "shamir-sharing"
 SHAMIR_TMPDIR="${TMPDIR}$(uuidgen)"
 mkdir -p $SHAMIR_TMPDIR
@@ -43,25 +28,3 @@ else
     H3 "macos-shamir-restore valid sha256      : ${SHAMIR_VALID_RESTORE}"
 fi
 rm -R "$SHAMIR_TMPDIR"
-
-H2 "genusername"
-USERGEN_TMPDIR="${TMPDIR}$(uuidgen)"
-mkdir -p "$USERGEN_TMPDIR"
-H3 "Downloading..."
-curl -sSL -o ${USERGEN_TMPDIR}/genusername.js https://raw.githubusercontent.com/themand/genusername/master/genusername.js
-H3 "Verifying checksum..."
-USERGEN_VALID="6992dde02d43bb03327d0f0baab77d59cae7362abafec852963ec3334005db40"
-USERGEN_SHA=$(shasum -p -a 256 $USERGEN_TMPDIR/genusername.js | cut -d' ' -f1)
-if [[ "$USERGEN_SHA" == "$USERGEN_VALID" ]]; then
-    H3 "Installing..."
-    (
-        echo '#!/usr/local/bin/node'
-        cat "$USERGEN_TMPDIR"/genusername.js
-    ) | sudo tee /usr/local/bin/genusername > /dev/null
-    sudo chmod +x /usr/local/bin/genusername
-else
-    H2WARN "Checksums invalid. Not installing. Deleting downloaded files"
-    H3 "genusername.js downloaded sha256   : ${USERGEN_SHA}"
-    H3 "genusername.js valid sha256        : ${USERGEN_VALID}"
-fi
-rm -R "$USERGEN_TMPDIR"
