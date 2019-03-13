@@ -60,6 +60,16 @@
       "process" : "\/Library\/Little Snitch\/Little Snitch Software Update.app\/Contents\/MacOS\/Little Snitch Software Update",
       "protocol" : "tcp",
       "remote-hosts" : "sw-update.obdev.at"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1552389084.0493269,
+      "modificationDate" : 1552389084.0493269,
+      "owner" : "system",
+      "ports" : "443",
+      "process" : "\/usr\/bin\/curl",
+      "protocol" : "tcp",
+      "remote-hosts" : "raw.githubusercontent.com"
     }
   ]
 }
