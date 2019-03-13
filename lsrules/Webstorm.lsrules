@@ -32,6 +32,27 @@
       "process" : "\/Volumes\/devtemp\/Applications\/WebStorm.app\/Contents\/MacOS\/webstorm",
       "protocol" : "tcp",
       "remote-domains" : "jetbrains.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1552387952.977963,
+      "modificationDate" : 1552387952.977963,
+      "owner" : "me",
+      "ports" : "80",
+      "process" : "\/Volumes\/devtemp\/Applications\/WebStorm.app\/Contents\/MacOS\/webstorm",
+      "protocol" : "tcp",
+      "remote-hosts" : "registry.npmjs.org"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1552389943.991431,
+      "modificationDate" : 1552389943.991431,
+      "owner" : "me",
+      "ports" : "443",
+      "process" : "\/Volumes\/devtemp\/Applications\/WebStorm.app\/Contents\/MacOS\/webstorm",
+      "protocol" : "tcp",
+      "remote-hosts" : "registry.npmjs.org",
+      "via" : "\/usr\/local\/bin\/node"
     }
   ]
 }
