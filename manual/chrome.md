@@ -43,8 +43,13 @@
 * Google Docs Offline
 * Google Apps: Docs, Sheets, Slides, etc
 
+## Swich to Chrome
+
+Close all pages in Safari, clear history, switch to Chrome.
+
 ## Separate profiles
 
 It's best to setup separate profiles for separate purposes.
 
 After creating a profile, run `macos-bootstrap/scripts/chrome_profile.sh ProfileDirName` to setup another profile with the same configuration as default profile. 
+
