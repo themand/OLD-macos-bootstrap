@@ -42,16 +42,6 @@
     },
     {
       "action" : "allow",
-      "creationDate" : 1552170422.9465861,
-      "modificationDate" : 1552170422.9465861,
-      "owner" : "system",
-      "ports" : "443",
-      "process" : "\/usr\/libexec\/nsurlsessiond",
-      "protocol" : "tcp",
-      "remote-hosts" : "mesu.apple.com"
-    },
-    {
-      "action" : "allow",
       "creationDate" : 1552170764.658232,
       "modificationDate" : 1552170764.658232,
       "owner" : "system",
@@ -98,7 +88,7 @@
       "ports" : "443",
       "process" : "\/usr\/libexec\/locationd",
       "protocol" : "tcp",
-      "remote-hosts" : "gs-loc.apple.com"
+      "remote-hosts" : "apple.com"
     },
     {
       "action" : "allow",
@@ -208,7 +198,7 @@
       "ports" : "80",
       "process" : "\/usr\/libexec\/nsurlsessiond",
       "protocol" : "tcp",
-      "remote-hosts" : "appldnld.apple.com"
+      "remote-hosts" : "apple.com"
     },
     {
       "action" : "allow",
@@ -248,7 +238,7 @@
       "ports" : "443",
       "process" : "\/System\/Library\/CoreServices\/Software Update.app\/Contents\/Resources\/softwareupdated",
       "protocol" : "tcp",
-      "remote-hosts" : "swscan.apple.com"
+      "remote-hosts" : "apple.com"
     },
     {
       "action" : "allow",
@@ -337,6 +327,16 @@
       "owner" : "me",
       "ports" : "443",
       "process" : "\/System\/Library\/PrivateFrameworks\/AuthKit.framework\/Versions\/A\/Support\/akd",
+      "protocol" : "tcp",
+      "remote-domains" : "apple.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1553540785.114219,
+      "modificationDate" : 1553540785.114219,
+      "owner" : "system",
+      "ports" : "80",
+      "process" : "\/usr\/sbin\/ocspd",
       "protocol" : "tcp",
       "remote-domains" : "apple.com"
     }
