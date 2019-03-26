@@ -4,10 +4,6 @@ set -euo pipefail
 . ${0%/*}/../includes/functions.sh
 
 H2 "shamir-sharing"
-SHAMIR_VER="v1.0.2"
-if [ $(curl -s https://api.github.com/repos/themand/shamir-sharing/releases/latest | jq -r ".name") != "$SHAMIR_VER" ]; then
-    H2WARN "Newer shamir-sharing version found ("$(curl -s https://api.github.com/repos/themand/shamir-sharing/releases/latest | jq -r ".name")"). Installing known $SHAMIR_VER, please check for upgrade"
-fi
 SHAMIR_TMPDIR="${TMPDIR}$(uuidgen)"
 mkdir -p $SHAMIR_TMPDIR
 H3 "Downloading..."
