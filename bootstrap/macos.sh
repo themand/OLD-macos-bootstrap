@@ -80,7 +80,7 @@ sudo systemsetup -setremoteappleevents off >/dev/null
 
 H2 "Screenshots settings"
 H3 "Set default screenshots location to ~/Screenshots"
-mkdir -p "${HOME}/Desktop"
+mkdir -p "${HOME}/Screenshots"
 defaults write com.apple.screencapture location -string "${HOME}/Screenshots"
 H3 "Disable shadow in window screenshots"
 defaults write com.apple.screencapture disable-shadow -bool true
