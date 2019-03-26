@@ -88,7 +88,7 @@
       "ports" : "443",
       "process" : "\/usr\/libexec\/locationd",
       "protocol" : "tcp",
-      "remote-hosts" : "apple.com"
+      "remote-domains" : "apple.com"
     },
     {
       "action" : "allow",
@@ -198,7 +198,7 @@
       "ports" : "80",
       "process" : "\/usr\/libexec\/nsurlsessiond",
       "protocol" : "tcp",
-      "remote-hosts" : "apple.com"
+      "remote-domains" : "apple.com"
     },
     {
       "action" : "allow",
@@ -238,7 +238,7 @@
       "ports" : "443",
       "process" : "\/System\/Library\/CoreServices\/Software Update.app\/Contents\/Resources\/softwareupdated",
       "protocol" : "tcp",
-      "remote-hosts" : "apple.com"
+      "remote-domains" : "apple.com"
     },
     {
       "action" : "allow",
@@ -337,6 +337,16 @@
       "owner" : "system",
       "ports" : "80",
       "process" : "\/usr\/sbin\/ocspd",
+      "protocol" : "tcp",
+      "remote-domains" : "apple.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1553596126.507962,
+      "modificationDate" : 1553596126.507962,
+      "owner" : "me",
+      "ports" : "443",
+      "process" : "\/System\/Library\/PrivateFrameworks\/HelpData.framework\/Versions\/A\/Resources\/helpd",
       "protocol" : "tcp",
       "remote-domains" : "apple.com"
     }
