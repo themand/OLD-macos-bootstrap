@@ -11,22 +11,26 @@ sudo -v
 
 HOMEBREW_PREFIX="$(brew --prefix 2>/dev/null || true)"
 [ -n "$HOMEBREW_PREFIX" ] || HOMEBREW_PREFIX="/usr/local"
-H3 "at prefix $HOMEBREW_PREFIX"
+H3 "Will install at prefix $HOMEBREW_PREFIX"
+
+HOMEBREW_REPOSITORY="$(brew --repository 2>/dev/null || true)"
+[ -n "$HOMEBREW_REPOSITORY" ] || HOMEBREW_REPOSITORY="$HOMEBREW_PREFIX/Homebrew"
+H3 "Will install source code to $HOMEBREW_REPOSITORY"
+
 [ -d "$HOMEBREW_PREFIX" ] || sudo mkdir -p "$HOMEBREW_PREFIX"
 if [ "$HOMEBREW_PREFIX" = "/usr/local" ]
 then
     sudo chown "root:wheel" "$HOMEBREW_PREFIX" 2>/dev/null || true
 fi
-(
+
+H3 "Preparing $HOMEBREW_REPOSITORY"
+[ -d "$HOMEBREW_REPOSITORY" ] || (
     cd "$HOMEBREW_PREFIX"
     sudo mkdir -p Cellar Frameworks bin etc include lib opt sbin share var
     sudo chown -R "$USER:admin" Cellar Frameworks bin etc include lib opt sbin share var
+    sudo mkdir -p "$HOMEBREW_REPOSITORY"
 )
 
-HOMEBREW_REPOSITORY="$(brew --repository 2>/dev/null || true)"
-[ -n "$HOMEBREW_REPOSITORY" ] || HOMEBREW_REPOSITORY="/usr/local/Homebrew"
-H3 "Preparing $HOMEBREW_REPOSITORY"
-[ -d "$HOMEBREW_REPOSITORY" ] || sudo mkdir -p "$HOMEBREW_REPOSITORY"
 sudo chown -R "$USER:admin" "$HOMEBREW_REPOSITORY"
 if [ $HOMEBREW_PREFIX != $HOMEBREW_REPOSITORY ]
 then
