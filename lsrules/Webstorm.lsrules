@@ -8,7 +8,7 @@
       "modificationDate" : 1552171902.9835958,
       "owner" : "me",
       "ports" : "443",
-      "process" : "\/Volumes\/devtemp\/Applications\/WebStorm.app\/Contents\/MacOS\/webstorm",
+      "process" : "\/Applications\/WebStorm.app\/Contents\/MacOS\/webstorm",
       "protocol" : "tcp",
       "remote-hosts" : "schemastore.azurewebsites.net"
     },
@@ -18,7 +18,7 @@
       "modificationDate" : 1552171764.3679609,
       "owner" : "me",
       "ports" : "443",
-      "process" : "\/Volumes\/devtemp\/Applications\/WebStorm.app\/Contents\/MacOS\/webstorm",
+      "process" : "\/Applications\/WebStorm.app\/Contents\/MacOS\/webstorm",
       "protocol" : "tcp",
       "remote-domains" : "github.com",
       "via" : "\/Library\/Developer\/CommandLineTools\/usr\/libexec\/git-core\/git-remote-http"
@@ -29,7 +29,7 @@
       "modificationDate" : 1552171893.6602459,
       "owner" : "me",
       "ports" : "443",
-      "process" : "\/Volumes\/devtemp\/Applications\/WebStorm.app\/Contents\/MacOS\/webstorm",
+      "process" : "\/Applications\/WebStorm.app\/Contents\/MacOS\/webstorm",
       "protocol" : "tcp",
       "remote-domains" : "jetbrains.com"
     },
@@ -39,7 +39,7 @@
       "modificationDate" : 1552387952.977963,
       "owner" : "me",
       "ports" : "80",
-      "process" : "\/Volumes\/devtemp\/Applications\/WebStorm.app\/Contents\/MacOS\/webstorm",
+      "process" : "\/Applications\/WebStorm.app\/Contents\/MacOS\/webstorm",
       "protocol" : "tcp",
       "remote-hosts" : "registry.npmjs.org"
     },
@@ -49,7 +49,7 @@
       "modificationDate" : 1552389943.991431,
       "owner" : "me",
       "ports" : "443",
-      "process" : "\/Volumes\/devtemp\/Applications\/WebStorm.app\/Contents\/MacOS\/webstorm",
+      "process" : "\/Applications\/WebStorm.app\/Contents\/MacOS\/webstorm",
       "protocol" : "tcp",
       "remote-hosts" : "registry.npmjs.org",
       "via" : "\/usr\/local\/bin\/node"
