@@ -242,6 +242,16 @@
     },
     {
       "action" : "allow",
+      "creationDate" : 1552323783.9809799,
+      "modificationDate" : 1552323783.9809799,
+      "owner" : "system",
+      "ports" : "80",
+      "process" : "\/System\/Library\/CoreServices\/Software Update.app\/Contents\/Resources\/softwareupdated",
+      "protocol" : "tcp",
+      "remote-domains" : "apple.com"
+    },
+    {
+      "action" : "allow",
       "creationDate" : 1552323835.268085,
       "modificationDate" : 1552323835.268085,
       "owner" : "me",
