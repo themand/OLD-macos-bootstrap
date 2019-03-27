@@ -287,10 +287,10 @@ defaults write com.apple.spotlight orderedItems -array \
 defaults write com.apple.lookup.shared LookupSuggestionsDisabled -int 1
 H3 "Reloading settings"
 sudo killall mds
-H3 "Ensuring indexing is enabled for the main volume"
-sudo mdutil -i on /
 H3 "Rebuilding the index from scratch"
-sudo mdutil -E /
+sudo mdutil -i off /
+sudo rm -rf /.Spotlight-V100/
+sudo mdutil -i on /
 
 H2 "Terminal.app"
 H3 "Only use UTF-8 in Terminal.app"
