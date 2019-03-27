@@ -5,3 +5,6 @@ set -euo pipefail
 
 H1 "Installing dotfiles to home directory"
 cp -r $(echo ${0%/*})/assets/dotfiles/ ~/
+
+chmod 700 ~/.gnupg
+chmod 600 ~/.gnupg/*
